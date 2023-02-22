@@ -1,5 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import router from './router';
 
 mongoose
   .set('strictQuery', false)
@@ -9,9 +10,7 @@ mongoose
 
     const port = 3333;
 
-    app.get('/', (request, response) => {
-      return response.json({ message: 'Waiter App - Server Online' });
-    });
+    app.use(router);
 
     app.listen(port, () => {
       console.log(
