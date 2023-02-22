@@ -12,7 +12,7 @@ export async function createProduct(request: Request, response: Response) {
       price: Number(price),
       category,
       imagePath,
-      ingredients: JSON.parse(ingredients),
+      ingredients: ingredients ? JSON.parse(ingredients) : [],
     });
 
     return response.status(201).json(product);
