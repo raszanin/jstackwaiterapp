@@ -4,6 +4,10 @@ import path from 'node:path';
 import { createCategory } from './app/useCases/categories/createCategory';
 import { listCategories } from './app/useCases/categories/listCategories';
 import { listProductsByCategory } from './app/useCases/categories/listProductsByCategory';
+import { cancelOrder } from './app/useCases/orders/cancelOrder';
+import { changeOrderStatus } from './app/useCases/orders/changeOrderStatus';
+import { createOrder } from './app/useCases/orders/createOrder';
+import { listOrders } from './app/useCases/orders/listOrders';
 import { createProduct } from './app/useCases/products/createProduct';
 import { listProducts } from './app/useCases/products/listProducts';
 
@@ -40,23 +44,15 @@ router.post('/products', upload.single('image'), createProduct);
 router.get('/categories/:categoryId/products', listProductsByCategory);
 
 // List Orders
-router.get('/orders', (request, response) => {
-  return response.json('get orders ok');
-});
+router.get('/orders', listOrders);
 
 // Create Order
-router.post('/orders', (request, response) => {
-  return response.json('post orders ok');
-});
+router.post('/orders', createOrder);
 
 // Change order status
-router.patch('/orders/:orderId', (request, response) => {
-  return response.json('patch orders ok');
-});
+router.patch('/orders/:orderId', changeOrderStatus);
 
 // Delete/Cancel Order
-router.delete('/orders/:orderId', (request, response) => {
-  return response.json('delete orders ok');
-});
+router.delete('/orders/:orderId', cancelOrder);
 
 export default router;

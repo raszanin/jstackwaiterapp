@@ -7,7 +7,8 @@
   "private": true,
   "scripts": {
     "build": "tsc --build",
-    "dev:server": "tsnd --clear --exit-child --inspect --transpile-only --ignore-watch node_modules src/server.ts"
+    "dev:server": "tsnd --clear --exit-child --inspect --transpile-only --ignore-watch node_modules src/server.ts",
+    "start": "node dist/server.js"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
