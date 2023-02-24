@@ -1,5 +1,15 @@
+import { Header } from './components/Header';
+import { Orders } from './components/Orders';
+import { GlobalStyles } from './styles/GlobalStyles';
+
 function App() {
-  return <h1>WaiterApp</h1>;
+  return (
+    <>
+      <GlobalStyles />
+      <Header />
+      <Orders />
+    </>
+  );
 }
 
 export default App;
