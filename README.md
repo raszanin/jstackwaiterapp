@@ -1,9 +1,28 @@
-# jstackwaiterapp
+<h1 style="margin-bottom: 40px">Maratona JStack - WaiterApp</h1>
 
-jstack - waiterapp
+<div>
+  <p>Projeto desenvolvido no evento gratuito Maratona JStack - WaiterApp, <a href="https://jstack.com.br/"> JStack</a></p>
 
-App desenvolvido na semana JStack - OPJS
+</div>
 
-api
-web
-mobile
+<div>
+  <h2 style="margin-top: 30px">🛠️ Tech Stack</h2>
+  <hr>
+
+  <p>Figma</p>
+  <p>HTML</p>
+  <p>CSS</p>
+  <p>Node</p>
+  <p>Typescript</p>
+  <p>MongoDB</p>
+  <p>Insomnia</p>
+
+</div>
+
+<div>
+  <h2 style="margin-top: 30px">👀 Preview</h2>
+  <hr>
+  <img src=".github/capa1.png" alt="Capa 1">
+  <hr>
+  <img src=".github/capa1.png" alt="Capa 2">
+</div>
