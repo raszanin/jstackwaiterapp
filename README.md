@@ -22,7 +22,7 @@
 <div>
   <h2 style="margin-top: 30px">👀 Preview</h2>
   <hr>
-  <img src=".github/capa1.png" alt="Capa 1">
+  <img src=".github/capa1.png" alt="Capa 1" width='320'>
   <hr>
-  <img src=".github/capa1.png" alt="Capa 2">
+  <img src=".github/capa2.png" alt="Capa 2">
 </div>
